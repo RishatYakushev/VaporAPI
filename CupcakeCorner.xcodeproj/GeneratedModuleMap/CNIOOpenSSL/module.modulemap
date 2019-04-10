@@ -1,0 +1,4 @@
+module CNIOOpenSSL {
+    umbrella "/Users/rishatyakushev/Desktop/IntrovertLabs - исходный код/Back end/NetworkCompany/.build/checkouts/swift-nio-ssl.git-7850412819425720429/Sources/CNIOOpenSSL/include"
+    export *
+}

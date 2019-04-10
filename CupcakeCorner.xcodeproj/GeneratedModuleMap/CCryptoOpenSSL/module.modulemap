@@ -1,0 +1,4 @@
+module CCryptoOpenSSL {
+    umbrella "/Users/rishatyakushev/Desktop/IntrovertLabs - исходный код/Back end/NetworkCompany/.build/checkouts/crypto.git--5962449880015656690/Sources/CCryptoOpenSSL/include"
+    export *
+}

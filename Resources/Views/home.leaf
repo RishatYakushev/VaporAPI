@@ -1,0 +1,44 @@
+<html>
+<body>
+<h1>Заявка на осуществление технологического присоединения</h1>
+
+
+
+<h2>Вид заявки</h2>
+<ul>
+	#for(order in orders) {
+		<li>Order #(order.cakeName) for #(order.buyerName) at #date(order.date, "HH:mm, dd-MM-yyyy")</li>
+	}
+</ul>
+
+<form method="post" action="/add">
+<select id="groups" name="orderType">
+<optgroup label="Вид заявки">
+<option> Заявка на осуществление технологического присоединения</option>
+<option selected>Заявка на осуществление технологического присоединения по временной схеме</option>
+<option>Заявка на осуществление технологического присоединения посредством перераспределения максимальной мощности</option>
+<option>Заявка на восстановление (переоформление) документов</option>
+</select>
+
+<h2>Информация о заявителе</h2>
+
+
+
+
+
+<p>Фамилия *: <br /> <input type="text" name="firstName" /></p>
+<p>Имя *: <br /> <input type="text" name="lastName" /></p>
+<p>Отчество *: <br /> <input type="text" name="patronymic" /></p>
+<p>Цена: *: <br /> <input type="text" name="cost" /></p>
+<p>Cтатус *: <br /> <input type="text" name="status" /></p>
+<p>Номер заказа: *: <br /> <input type="text" name="orderUID" /></p>
+<p>Дата начала: *: <br /> <input type="text" name="startDate" /></p>
+<p>Дата окончания: *: <br /> <input type="text" name="finishDate" /></p>
+<p>ИНН: *: <br /> <input type="text" name="inn" /></p>
+<p>Номер телефона *: <br /> <input type="text" name="phoneNumber" /></p>
+
+<button type="submit">Добавить</button>
+</form>
+
+</body>
+</html>
